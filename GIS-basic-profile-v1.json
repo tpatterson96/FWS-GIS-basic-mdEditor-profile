@@ -193,18 +193,7 @@
           "stepProduct": true,
           "processor": true,
           "stepReference": true,
-          "timePeriod": {
-            "dateRange": {
-              "start": true,
-              "end": true,
-              "fiscalyear": true
-            },
-            "identifier": true,
-            "periodName": true,
-            "interval": true,
-            "duration": true,
-            "scope": true
-          },
+          "timePeriod": false,
           "scope": false
         },
         "source": {
@@ -214,7 +203,7 @@
           "sourceCitation": {
             "basicInformation": {
               "title": true,
-              "alternateTitle": true,
+              "alternateTitle": false,
               "dates": {
                 "dateItem": {
                   "date": true,
@@ -234,9 +223,12 @@
                 "version": false,
                 "description": false
               }
-            },
+          },
           "metadataCitation": false,
-          "citation": {
+          "referenceSystem": false,
+          "spatialResolution": false
+        },
+        "citation": {
           "basicInformation": {
             "title": true,
             "alternateTitle": true,
@@ -248,7 +240,7 @@
               }
             },
             "edition": true,
-            "presentationForm": false
+            "presentationForm": true
           },
           "responsibleParty": {
             "role": true,
@@ -257,24 +249,88 @@
           "onlineResource": {
             "name": true,
             "url": true,
-            "protocol": false,
+            "protocol": true,
             "description": true,
             "onlineFunction": true,
-            "applicationProfile": false,
-            "protocolRequest": false
+            "applicationProfile": true,
+            "protocolRequest": true
           },
-          "identifier": false,
-          "identifierSimple": false,
-          "identifierShort": {
-            "version": false,
-            "description": false
+          "identifier": {
+            "identifier": true,
+            "namespace": true,
+            "version": true,
+            "description": true,
+            "authority": {
+              "basicInformation": {
+                "title": true,
+                "alternateTitle": true,
+                "dates": {
+                  "dateItem": {
+                    "date": true,
+                    "dateType": true,
+                    "description": true
+                  }
+                }
+              },
+              "responsibleParty": {
+                "role": true,
+                "contacts": true
+              },
+              "onlineResource": {
+                "name": true,
+                "url": true,
+                "protocol": true,
+                "description": true,
+                "onlineFunction": true,
+                "applicationProfile": true,
+                "protocolRequest": true
+              },
+              "identifier": true,
+              "identifierSimple": {
+                "identifier": true,
+                "namespace": true,
+                "version": true,
+                "description": true,
+                "authority": {
+                  "basicInformation": {
+                    "title": true,
+                    "alternateTitle": true,
+                    "dates": true
+                  },
+                  "responsibleParty": true,
+                  "onlineResource": true,
+                  "identifier": true,
+                  "identifierSimple": true,
+                  "identifierShort": true
+                }
+              },
+              "identifierShort": true
+            }
           },
-          "series": false,
+          "identifierSimple": true,
+          "identifierShort": true,
+          "series": {
+            "name": true,
+            "issue": true,
+            "page": true
+          },
           "otherCitationDetails": true,
-          "graphic": false
+          "graphic": {
+            "fileName": true,
+            "fileType": true,
+            "fileDescription": true,
+            "onlineResource": {
+              "name": true,
+              "url": true,
+              "protocol": true,
+              "description": true,
+              "onlineFunction": true,
+              "applicationProfile": true,
+              "protocolRequest": true
+            }
+          }
         },
         "scope": false
-        }
       },
       "taxonomy": {
         "collection": {
