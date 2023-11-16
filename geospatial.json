@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "geospatial",
-  "title": "Geospatial Module",
+  "$id": "FWS geospatial basic",
+  "title": "FWS Geospatial Basic v1",
   "description": "Defines the metadata elements that are specific to geospatial data, for example information about how position is encoded and data quality descriptions such as datums and positional accuracy.",
   "version": "0.0.1",
   "type": "object",
@@ -34,7 +34,7 @@
         "$ref": "#/definitions/Geospatial"
       },
       "errorMessage": {
-        "if": "Resources with types of dataset, tile, coverage, or map must meet metadata specifications for Geospatial resources."
+        "if": "Resources with types of  geographic dataset, tile, coverage, or map must meet metadata specifications for Geospatial resources."
       },
       "required": [
         "resourceInfo"
@@ -45,7 +45,7 @@
       "type": "object",
       "properties": {
         "type": {
-          "enum": ["dataset", "tile", "coverage", "map"]
+          "enum": ["geographicDataset", "tile", "coverage", "map"]
         }
       },
       "required": [
