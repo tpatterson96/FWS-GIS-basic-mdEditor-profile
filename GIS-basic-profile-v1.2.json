@@ -26,6 +26,7 @@
             "version": false,
             "description": false
           },
+          "series": false,
           "otherCitationDetails": false,
           "graphic": false
         },
@@ -48,7 +49,7 @@
       },
       "metadata": {
         "metadataIdentifier": false,
-        "parentMetadata": false,
+        "parentMetadata": true,
         "onlineResource": false,
         "maintenance": false,
         "defaultLocale": false,
@@ -63,13 +64,7 @@
       "lineage": {
         "processStep": {
           "stepId": false,
-          "timePeriod": {
-            "identifier": false,
-            "periodName": false,
-            "interval": false,
-            "duration": false,
-            "scope": false
-          },
+          "timePeriod": false,
           "stepReference": false,
           "scope": false
         },
@@ -85,10 +80,10 @@
               "applicationProfile": false,
               "protocolRequest": false
             },
-            "identifierSimple": {
+            "identifier": false,
+            "identifierShort": {
               "version": false,
-              "description": false,
-              "authority": false
+              "description": false
             }
           },
           "metadataCitation": false,
@@ -111,6 +106,7 @@
             "version": false,
             "description": false
           },
+          "series": false,
           "otherCitationDetails": false,
           "graphic": false
         }
@@ -210,14 +206,14 @@
         "tip": "Terms used to describe the product."
       },
       {
-        "title": "Lineage",
-        "target": "record.show.edit.lineage",
-        "tip": "Information on the history of the geospatial dataset."
-      },
-      {
         "title": "Extent",
         "target": "record.show.edit.extent",
         "tip": "Information describing the bounds of the geospatial dataset."
+      },
+      {
+        "title": "Lineage",
+        "target": "record.show.edit.lineage",
+        "tip": "Information on the history of the geospatial dataset."
       },
       {
         "title": "Spatial",
