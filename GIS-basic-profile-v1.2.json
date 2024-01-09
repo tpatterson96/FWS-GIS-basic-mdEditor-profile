@@ -60,6 +60,28 @@
         "geographic": {
           "containsData": false
         }
+      }, 
+      "spatial": {
+        "spatialRepresentationType": true,
+        "spatialReferenceSystem": {
+          "referenceSystemType": true,
+          "referenceSystemIdentifier": {
+            "identifier": true,
+            "namespace": true,
+            "version": true,
+            "description": true,
+            "authority": false
+          }
+        },
+        "spatialResolution": {
+          "scaleFactor": true,
+          "levelOfDetail": true,
+          "measure": {
+            "type": true,
+            "value": true,
+            "units": true
+          }
+        }
       },
       "lineage": {
         "processStep": {
